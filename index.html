@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Гурт «Грим та Грім» — український рок. Афіша, концерти, учасники, контакти.">
+    <title>Грим та Грім — офіційний сайт</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/main.js" defer></script>
+</head>
+
+<body id="top">
+    <header class="header">
+        <div class="header__container container">
+            <nav class="header__nav" aria-label="Головна навігація">
+                <a class="header__logo" href="#top" aria-label="На початок сторінки">
+                    <img src="./css/images/logo.svg" alt="Логотип гурту" width="84" height="30">
+                </a>
+
+                <ul class="header__menu-list visible-desktop">
+                    <li><a class="header__menu-link" href="#about">Про гурт</a></li>
+                    <li><a class="header__menu-link" href="#concerts">Концерт</a></li>
+                    <li><a class="header__menu-link" href="#gallery">Галерея</a></li>
+                    <li><a class="header__menu-link" href="#contacts">Контакти</a></li>
+                </ul>
+
+                <button class="burger-button visible-mobile" id="burgerBtn" type="button" aria-label="Відкрити меню">
+                    <span class="visually-hidden">Відкрити навігаційне меню</span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        
+        <section class="hero-section" id="about">
+            <div class="container">
+                <h1 class="hero-section__title">Гурт «Грим та Грім»</h1>
+                <p class="hero-section__subtitle">Справжній український рок, який гуркоче в серці.</p>
+
+                <p class="hero-section__description">
+                    «Грим та Грім» — це поєднання <span class="text">потужних</span> гітарних рифів, чесних текстів і
+                    вибухової енергії сцени.
+                </p>
+                <p class="hero-section__description">
+                    <span class="text">Наші концерти</span> — це завжди контакт з залом, драйв і емоції. Приєднуйся до
+                    нас і відчуй цей саунд наживо!
+                </p>
+
+                <button class="button hero-section__button" type="button" data-ticket data-city="—" data-venue="Онлайн"
+                    data-datetime="Найближчі дати в розкладі нижче">
+                    Замовити квиток
+                </button>
+            </div>
+        </section>
+
+        <section class="card-section" id="concerts">
+            <div class="container">
+                <h2 class="card-section__title">Найближчі концерти</h2>
+
+                <div class="table-wrap" role="region" aria-label="Таблиця концертів" tabindex="0">
+                    <table class="card-section__table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Місто / Заклад</th>
+                                <th scope="col">К-сть місць</th>
+                                <th scope="col">Дата і час</th>
+                                <th scope="col" class="th-actions"></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td data-label="Місто / Заклад">Київ — Docker-G Pub</td>
+                                <td data-label="К-сть місць">250</td>
+                                <td data-label="Дата і час">25.10.2025, 19:00</td>
+                                <td class="td-actions">
+                                    <button class="button button--danger" type="button" data-ticket data-city="Київ"
+                                        data-venue="Docker-G Pub" data-datetime="25.10.2025, 19:00">
+                                        Замовити квиток
+                                    </button>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td data-label="Місто / Заклад">Львів — !FESTrepublic</td>
+                                <td data-label="К-сть місць">400</td>
+                                <td data-label="Дата і час">01.11.2025, 20:00</td>
+                                <td class="td-actions">
+                                    <button class="button button--danger" type="button" data-ticket data-city="Львів"
+                                        data-venue="!FESTrepublic" data-datetime="01.11.2025, 20:00">
+                                        Замовити квиток
+                                    </button>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td data-label="Місто / Заклад">Одеса — Зелений театр</td>
+                                <td data-label="К-сть місць">700</td>
+                                <td data-label="Дата і час">09.11.2025, 19:30</td>
+                                <td class="td-actions">
+                                    <button class="button button--danger" type="button" data-ticket data-city="Одеса"
+                                        data-venue="Зелений театр" data-datetime="09.11.2025, 19:30">
+                                        Замовити квиток
+                                    </button>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td data-label="Місто / Заклад">Харків — ArtZavod</td>
+                                <td data-label="К-сть місць">500</td>
+                                <td data-label="Дата і час">16.11.2025, 19:00</td>
+                                <td class="td-actions">
+                                    <button class="button button--danger" type="button" data-ticket data-city="Харків"
+                                        data-venue="ArtZavod" data-datetime="16.11.2025, 19:00">
+                                        Замовити квиток
+                                    </button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="music-section" id="gallery">
+            <div class="container">
+                <h2 class="music-section__title">Учасники гурту</h2>
+
+                <div class="music-grid">
+                    <article class="music-card">
+                        <h3 class="visually-hidden">Максим</h3>
+                        <img src="./css/images/music-1.png" alt="Максим — гітара" loading="lazy" width="400"
+                            height="280">
+                        <p class="music-card__caption">Максим — гітара</p>
+                    </article>
+
+                    <article class="music-card">
+                        <h3 class="visually-hidden">Олена</h3>
+                        <img src="./css/images/music-2.png" alt="Олена — вокал" loading="lazy" width="400" height="280">
+                        <p class="music-card__caption">Олена — вокал</p>
+                    </article>
+
+                    <article class="music-card">
+                        <h3 class="visually-hidden">Тарас</h3>
+                        <img src="./css/images/music-3.png" alt="Тарас — барабани" loading="lazy" width="400"
+                            height="280">
+                        <p class="music-card__caption">Тарас — барабани</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="history-section">
+            <div class="container">
+                <h2 class="history-section__title">Наша історія</h2>
+
+                <div class="history-section__inner">
+                    <div class="history-section__content">
+                        <p>
+                            «Грим та Грім» народився з бажання створювати музику, яка відчувається серцем.
+                            Ми почали шлях у маленькій студії в центрі Києва, де кожен акорд і кожне слово було
+                            наповнене емоціями.
+                        </p>
+                        <p>
+                            За роки діяльності ми виступили на десятках сцен — від клубів до фестивалів.
+                            Ми не боїмося експериментувати зі звуком, додаючи сучасні елементи й унікальні аранжування.
+                        </p>
+                    </div>
+
+                    <img class="history-section__image" src="./css/images/history.png" alt="Виступ гурту" loading="lazy"
+                        width="520" height="360">
+                </div>
+
+                <div class="history-section__text">
+                    <p>
+                        Кожен виступ — це не просто концерт, а подія, де ми ділимося енергією з глядачами та створюємо
+                        неповторну атмосферу.
+                    </p>
+                    <p>
+                        Наш колектив складається з музикантів, кожен із яких привносить свій стиль. Максим — рифи, Олена
+                        — вокал, Тарас — ритм.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-section" id="contacts">
+            <div class="container">
+                <h2 class="contact-section__title">Звʼяжись з нами</h2>
+                <p class="contact-section__subtitle">Хочеш <strong>замовити</strong> виступ або маєш питання? Пиши!</p>
+
+                <div class="contact-section__inner">
+                    <form class="contact-form" id="contactForm" method="post" action="./" novalidate>
+                        <div class="contact-form__row">
+                            <div class="contact-form__group">
+                                <label class="contact-form__label" for="user-name">Імʼя</label>
+                                <input class="contact-form__input" type="text" name="name" id="user-name" required
+                                    minlength="2" maxlength="50" autocomplete="name">
+                                <small class="field-error" data-error-for="user-name" aria-live="polite"></small>
+                            </div>
+
+                            <div class="contact-form__group">
+                                <label class="contact-form__label" for="user-email">Email</label>
+                                <input class="contact-form__input" type="email" name="email" id="user-email" required
+                                    maxlength="80" autocomplete="email">
+                                <small class="field-error" data-error-for="user-email" aria-live="polite"></small>
+                            </div>
+                        </div>
+
+                        <div class="contact-form__group">
+                            <label class="contact-form__label" for="user-message">Повідомлення</label>
+                            <textarea class="contact-form__input contact-form__input--textarea" name="message" id="user-message"
+                                placeholder="Розкажи про свої ідеї..." rows="6" required minlength="10"
+                                maxlength="800"></textarea>
+                            <small class="field-error" data-error-for="user-message" aria-live="polite"></small>
+                        </div>
+
+                        <button class="button button--danger contact-form__button" type="submit">
+                            Відправити
+                        </button>
+
+                        <button class="button button--ghost contact-form__ghost" type="button" data-info
+                            data-title="Контакт"
+                            data-text="Можеш написати нам у соцмережі або через форму. Відповідаємо протягом 24 годин.">
+                            Як швидко ви відповідаєте?
+                        </button>
+                    </form>
+
+                    <div class="contact-map">
+                        <h3 class="contact-map__title">Наше місцезнаходження</h3>
+
+                        <div class="contact-map__frame">
+                            <iframe class="contact-section__map" title="Карта локації"
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.163630435281!2d30.488698376557704!3d50.45667757159333!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce637c006b2d%3A0xaf86385f19996ff0!2z0LLRg9C70LjRhtGPINCh0ZbRh9C-0LLQuNGFINCh0YLRgNGW0LvRjNGG0ZbQsiwgNTQsINCa0LjRl9CyLCAwMjAwMA!5e0!3m2!1suk!2sua!4v1761761194382!5m2!1suk!2sua"
+                                loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen>
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <address class="footer__address">
+                <div class="footer__contacts">
+                    <div class="footer__address-info">
+                        <p class="footer__address-copyright">
+                            &copy; 2025 «Грим та Грім». Всі права захищені.
+                        </p>
+                        <ul class="footer__address-list">
+                            <li><a class="link" href="mailto:booking@lotoplay.com">booking@lotoplay.com</a></li>
+                            <li><a class="link" href="tel:+380991234567">+38 (099) 123-45-67</a></li>
+                        </ul>
+                    </div>
+
+                    <ul class="footer__socials">
+                        <li><button class="link link--btn" type="button" data-info data-title="Instagram"
+                                data-text="Тут буде посилання на Instagram гурту.">Instagram</button></li>
+                        <li><button class="link link--btn" type="button" data-info data-title="YouTube"
+                                data-text="Тут буде посилання на YouTube гурту.">YouTube</button></li>
+                        <li><button class="link link--btn" type="button" data-info data-title="Facebook"
+                                data-text="Тут буде посилання на Facebook гурту.">Facebook</button></li>
+                    </ul>
+                </div>
+            </address>
+        </div>
+    </footer>
+
+    <dialog class="mobile-overlay visible-mobile" id="mobileOverlay" aria-label="Мобільне меню">
+        <form class="mobile-overlay__close-button-wrapper" method="dialog">
+            <button class="cross-button" type="submit" aria-label="Закрити меню"></button>
+        </form>
+
+        <div class="mobile-overlay__body">
+            <ul class="mobile-overlay__list">
+                <li><a class="mobile-overlay__link" href="#about">Про гурт</a></li>
+                <li><a class="mobile-overlay__link" href="#concerts">Концерт</a></li>
+                <li><a class="mobile-overlay__link" href="#gallery">Учасники</a></li>
+                <li><a class="mobile-overlay__link" href="#contacts">Контакти</a></li>
+            </ul>
+        </div>
+    </dialog>
+
+    <dialog class="modal" id="ticketModal" aria-label="Замовлення квитка">
+        <form class="modal__inner" method="dialog">
+            <header class="modal__header">
+                <h3 class="modal__title">Замовлення квитка</h3>
+                <button class="cross-button cross-button--small" type="submit" aria-label="Закрити"></button>
+            </header>
+
+            <p class="modal__text" id="ticketInfo"></p>
+
+            <div class="modal__actions">
+                <button class="button" type="submit">Ок</button>
+            </div>
+        </form>
+    </dialog>
+
+    <dialog class="modal" id="infoModal" aria-label="Інформація">
+        <form class="modal__inner" method="dialog">
+            <header class="modal__header">
+                <h3 class="modal__title" id="infoTitle">Інформація</h3>
+                <button class="cross-button cross-button--small" type="submit" aria-label="Закрити"></button>
+            </header>
+
+            <p class="modal__text" id="infoText"></p>
+
+            <div class="modal__actions">
+                <button class="button" type="submit">Закрити</button>
+            </div>
+        </form>
+    </dialog>
+
+</body>
+
+</html>
