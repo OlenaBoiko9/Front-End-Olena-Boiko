@@ -49,7 +49,7 @@ body {
   background-color: var(--color-primary-dark);
   font-family: 'Poppins', sans-serif;
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 1.35;
 }
 
@@ -84,18 +84,18 @@ p {
 
 h1 { 
   font-size: 42px; 
-  font-weight: 700; 
+  font-weight: 600; 
   line-height: 1.12; 
 }
 
 h2 { 
   font-size: 28px; 
-  font-weight: 700; 
+  font-weight: 600; 
 }
 
 h3 { 
   font-size: 20px; 
-  font-weight: 700; 
+  font-weight: 600; 
 }
 
 h4 { 
@@ -198,7 +198,7 @@ h4 {
 
 .header__menu-link {
   position: relative;
-  font-weight: 700;
+  font-weight: 600;
   opacity: 0.95;
   transition: opacity 0.2s ease;
 }
@@ -734,7 +734,7 @@ h4 {
 
 .link {
   position: relative;
-  font-weight: 700;
+  font-weight: 600;
   opacity: 0.95;
   background: none;
   border: none;
@@ -805,7 +805,7 @@ dialog::backdrop {
 
 .mobile-overlay__link {
   color: var(--color-accent-gray);
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .modal {

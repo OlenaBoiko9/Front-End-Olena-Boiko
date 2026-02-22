@@ -89,7 +89,7 @@
     }
 
     if (input.validity.tooShort) {
-      setError(input, `Мінімум ${input.minLength} символи(ів).`);
+       setError( input, input.minLength > 0 ? `Мінімум ${input.minLength} символів.` : 'Введіть більше символів.' );
       return false;
     }
 
